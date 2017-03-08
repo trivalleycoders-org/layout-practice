@@ -1,0 +1,54 @@
+#root {
+
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  background-color: gray;
+  justify-content: space-around;
+  min-height: 200px;
+  align-items: center;
+}
+
+#who-we-are {
+
+}
+
+#members {
+  display: flex;
+  flex-direction: row;
+  background-color: yellow;
+  justify-content: space-around;
+  min-height: 200px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#events-and-links {
+
+}
+
+#events {
+
+}
+
+#links {
+
+}
+
+#footer {
+
+}
+
+.menu-item {
+  background-color: blue;
+
+
+}
+
+.member-item {
+  background-color: blue;
+  width: 100px;
+  margin: auto;
+}
