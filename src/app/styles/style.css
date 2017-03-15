@@ -2,13 +2,50 @@
 
 }
 
-#header {
+.background {
+  background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("https://images.unsplash.com/1/work-station-straight-on-view.jpg");
+  background-color: gray;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-title {
   display: flex;
   flex-direction: row;
-  background-color: gray;
-  justify-content: space-around;
-  min-height: 200px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.title {
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+
+.intro-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+}
+
+.logo {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 10px;
+} 
+
+.menu-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 100px;
 }
 
 #who-we-are {
@@ -42,7 +79,8 @@
 }
 
 .menu-item {
-  background-color: blue;
+  background-color: orange;
+
 
 
 }
