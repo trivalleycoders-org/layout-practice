@@ -9,6 +9,11 @@
   background-size: cover;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
 .header-title {
   display: flex;
   flex-direction: row;
@@ -38,7 +43,7 @@
   margin-top: 10px;
   margin-right: 20px;
   margin-left: 10px;
-} 
+}
 
 .menu-buttons {
   display: flex;
