@@ -58,10 +58,16 @@
 
 .member-image {
   border-radius: 50%;
-  max-width: 75%;
+  max-width: 100%;
   align-items: center;
 }
-.member-p {
-  font-weight: bold;
-  text-align: center;
+.member-name {
+  font-style: normal;
+  font-weight:bold;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.member-interest {
+  font-size: 10px;
 }
