@@ -12,7 +12,10 @@
 }
 
 #who-we-are {
-
+  background-color: teal;
+  text-align:center;
+  font-size: 50px;
+  font-weight:bold;
 }
 
 #members {
@@ -48,7 +51,17 @@
 }
 
 .member-item {
-  background-color: blue;
+  background-color: clear;
   width: 100px;
   margin: auto;
+}
+
+.member-image {
+  border-radius: 50%;
+  max-width: 75%;
+  align-items: center;
+}
+.member-p {
+  font-weight: bold;
+  text-align: center;
 }
