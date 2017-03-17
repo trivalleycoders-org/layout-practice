@@ -51,23 +51,35 @@
 }
 
 .member-item {
+  display: flex;
   background-color: clear;
   width: 100px;
-  margin: auto;
+  margin: 0 50px;
+  flex-wrap: wrap;
 }
 
 .member-image {
   border-radius: 50%;
-  max-width: 100%;
+  max-width: 50%;
   align-items: center;
 }
 .member-name {
-  font-style: normal;
-  font-weight:bold;
-  font-size: 15px;
+  font-weight:bolder;
+  font-size: 20px;
+  align-items: center;
   white-space: nowrap;
 }
 
 .member-interest {
+  font-family: cursive;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.member-interest-list {
   font-size: 10px;
+  align-items: center;
+  align-items: center;
+  list-style-type: none;
+  white-space:nowrap;
 }
