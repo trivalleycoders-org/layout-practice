@@ -19,6 +19,7 @@
 
 .identity-logo {
   margin: 0 20px 0 10px;
+  max-width: 70px;
 }
 
 .identity-name {
@@ -61,7 +62,7 @@
   font-weight: 600;
   text-align: center;
   line-height: 150px;
-    
+
 }
 
 #who-we-are {
