@@ -1,56 +1,67 @@
 #root {
-
+  display: flex;
+  flex-direction: column;
 }
 
-.background {
+#header {
+  min-height: 710px;
   background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("https://images.unsplash.com/1/work-station-straight-on-view.jpg");
   background-color: gray;
   background-position: center;
   background-size: cover;
 }
 
-#root {
+#identity-container {
   display: flex;
-  flex-direction: column;
-}
-
-.header-title {
-  display: flex;
-  flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.title {
-  font-family: 'Indie Flower', cursive;
-  font-size: 50px;
+.identity-logo {
+  margin: 0 20px 0 10px;
 }
 
-.intro {
+.identity-name {
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+#welcome-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 150px;
-  margin-bottom: 40px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  margin: 150px 0 75px 0;
 }
 
-.intro-text {
-  font-family: 'Oswald', sans-serif;
-  font-size: 40px;
+.welcome-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
+  margin-bottom: -10px;
 }
 
-.logo {
-  margin-top: 10px;
-  margin-right: 20px;
-  margin-left: 10px;
-}
-
-.menu-buttons {
+.welcome-btn-row {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding-bottom: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.welcome-btns {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 10px 150px;
+  background-color: #43C59E;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 150px;
+    
 }
 
 #who-we-are {
@@ -80,13 +91,6 @@
 }
 
 #footer {
-
-}
-
-.menu-item {
-  background-color: orange;
-
-
 
 }
 
