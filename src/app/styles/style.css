@@ -1,14 +1,67 @@
 #root {
-
+  display: flex;
+  flex-direction: column;
 }
 
 #header {
-  display: flex;
-  flex-direction: row;
+  min-height: 710px;
+  background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("https://images.unsplash.com/1/work-station-straight-on-view.jpg");
   background-color: gray;
-  justify-content: space-around;
-  min-height: 200px;
+  background-position: center;
+  background-size: cover;
+}
+
+#identity-container {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.identity-logo {
+  margin: 0 20px 0 10px;
+}
+
+.identity-name {
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+#welcome-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  margin: 150px 0 75px 0;
+}
+
+.welcome-text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
+  margin-bottom: -10px;
+}
+
+.welcome-btn-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.welcome-btns {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 10px 150px;
+  background-color: #43C59E;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 150px;
+    
 }
 
 #who-we-are {
@@ -38,12 +91,6 @@
 }
 
 #footer {
-
-}
-
-.menu-item {
-  background-color: blue;
-
 
 }
 
