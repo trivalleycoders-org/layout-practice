@@ -4,22 +4,28 @@
 }
 
 #header {
-  min-height: 710px;
+  width: 100vw;
+  height: 100vh;
   background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("https://images.unsplash.com/1/work-station-straight-on-view.jpg");
   background-color: gray;
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 #identity-container {
   display: flex;
+  flex-direction: row nowrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: start;
+  flex-grow: 1;
 }
 
 .identity-logo {
   margin: 0 20px 0 10px;
   max-width: 70px;
+  align-self: flex-start;
 }
 
 .identity-name {
@@ -30,39 +36,55 @@
 
 #welcome-container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   flex-direction: column;
-  text-align: center;
-  margin: 150px 0 75px 0;
+  flex-grow: 1;
 }
 
 .welcome-text {
   font-family: 'Raleway', sans-serif;
-  font-size: 60px;
-  margin-bottom: -10px;
+  font-size: 4.3vw;
+  white-space: nowrap;
+  text-align: center;
+  
 }
 
 .welcome-btn-row {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  align-content: center;
+  /*flex-wrap: wrap;*/
+  flex-grow: .5;
 }
 
 .welcome-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-basis: 25%;
+  
+}
+
+.welcome-btn-circle {
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  margin: 10px 150px;
   background-color: #43C59E;
+  align-self: center;
+}
+
+.welcome-btns-text {
   font-family: 'Raleway', sans-serif;
   color: white;
   font-size: 20px;
   font-weight: 600;
-  text-align: center;
-  line-height: 150px;
+}
 
+.welcome-btns-text:last-child {
+  white-space: nowrap; /* assuming you want text in one line, like in your demo */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #who-we-are {
