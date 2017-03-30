@@ -24,28 +24,41 @@
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script>window.html5 || document.write('<script src="js/html5shiv.js"><\/script>')</script>
     <![endif]-->
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway" rel="stylesheet">
 </head>
-
 <body>
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div id="root">
+    <div id="header">
+      <div id="identity-container">
+        <img class="identity-logo" src="http://klequis.com/images/tvc/tvc.05.svg">
+        <p class="identity-name">Tri-Valley Coders</p>
+      </div>
+      <div id="welcome-container">
+        <p class="welcome-text">Welcome to the Tri-Valley Coders Group!</p>
+        <!-- row of nav buttons -->
+        <div class="welcome-btn-row">
+          <div class="welcome-btns">
+            <div class="welcome-btn-circle"></div>
+            <p class="welcome-btns-text">What We Do</p>
+          </div>
+          <div class="welcome-btns">
+            <div class="welcome-btn-circle"></div>
+            <p class="welcome-btns-text">Members</p>
+          </div>
+          <div class="welcome-btns">
+            <div class="welcome-btn-circle"></div>
+            <p class="welcome-btns-text">Events + Links</p>
+          </div>
+        </div>
+      </div>
+    </div>
   <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-  <div id="root">
-    <div id="header">
-      <div class="menu-item">
-        123
-      </div>
-
-      <div class="menu-item">
-        123
-      </div>
-
-      <div class="menu-item">
-        132
-      </div>
-    </div>
-
     <div id="who-we-are">
       ToDo
     </div>
@@ -105,9 +118,11 @@
       <div id="events"></div>
 
       <div id="links"></div>
-    </div>
 
-    <div id="footer"></div><!-- keep at bottom of body -->
+      <div id="footer"></div>
+      </div>
+
+<!-- keep at bottom of body -->
     <!-- Bootstrap: Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
