@@ -45,7 +45,7 @@
   font-size: 4.3vw;
   white-space: nowrap;
   text-align: center;
-  
+
 }
 
 .welcome-btn-row {
@@ -61,7 +61,7 @@
   align-items: center;
   position: relative;
   flex-basis: 25%;
-  
+
 }
 
 .welcome-btn-circle {
@@ -88,18 +88,12 @@
 }
 
 #who-we-are {
-
+  background-color: teal;
+  text-align:center;
+  font-size: 50px;
+  font-weight:bold;
 }
 
-#members {
-  display: flex;
-  flex-direction: row;
-  background-color: yellow;
-  justify-content: space-around;
-  min-height: 200px;
-  align-items: center;
-  flex-wrap: wrap;
-}
 
 #events-and-links {
 
@@ -117,6 +111,64 @@
 
 }
 
+#members {
+  display: flex;
+  flex-direction: row;
+  background-color: yellow;
+  justify-content: space-around;
+  min-height: 200px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.member-image {
+  max-width: 200px;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.member-detail {
+  text-align: center;
+}
+
+.member:nth-child(3n) {
+  color: red;
+}
+
+<<<<<<< HEAD
+.member-detail-interests {
+  font-weight: bolder;
+}
+/*
+.member-name {
+  font-weight:bolder;
+  font-size: 20px;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.member-interest {
+  font-family: cursive;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.member-interest-list {
+  font-size: 10px;
+  align-items: center;
+  align-items: center;
+  list-style-type: none;
+  white-space:nowrap;
+}
+*/
+=======
 .member-item {
   background-color: blue;
   width: 100px;
@@ -131,3 +183,4 @@
   font-size: 3000px;
   text-align: center;
 }
+>>>>>>> 854d84476f5dad0c9db6b917a81fc5b3a2bb5765
