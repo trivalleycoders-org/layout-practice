@@ -2,12 +2,14 @@
   display: flex;
   flex-direction: column;
 }
-
+/**
+ * Header styles.
+ */
 #header {
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("https://images.unsplash.com/1/work-station-straight-on-view.jpg");
-  background-color: gray;
+  background-color: #D1BEB0;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -87,6 +89,19 @@
   transform: translate(-50%, -50%);
 }
 
+/* media queries for header */
+@media only screen and (max-width: 768px) {
+  #header {
+    background-image: none;
+  }
+  .welcome-btn-row {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+
+
 #who-we-are {
   background-color: teal;
   text-align:center;
@@ -142,7 +157,6 @@
   color: red;
 }
 
-<<<<<<< HEAD
 .member-detail-interests {
   font-weight: bolder;
 }
@@ -168,7 +182,6 @@
   white-space:nowrap;
 }
 */
-=======
 .member-item {
   background-color: blue;
   width: 100px;
@@ -183,4 +196,3 @@
   font-size: 3000px;
   text-align: center;
 }
->>>>>>> 854d84476f5dad0c9db6b917a81fc5b3a2bb5765
