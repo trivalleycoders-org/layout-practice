@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: column;
 }
-
+/**
+ * Header styles.
+ */
 #header {
   width: 100vw;
   height: 100vh;
@@ -45,7 +47,6 @@
   font-size: 4.3vw;
   white-space: nowrap;
   text-align: center;
-
 }
 
 .welcome-btn-row {
@@ -61,7 +62,6 @@
   align-items: center;
   position: relative;
   flex-basis: 25%;
-
 }
 
 .welcome-btn-circle {
@@ -80,37 +80,24 @@
 }
 
 .welcome-btns-text:last-child {
-  white-space: nowrap; /* assuming you want text in one line, like in your demo */
+  white-space: nowrap; /* assuming you want text in one line */
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-
+/**
+ * What we do styles.
+ */
 #who-we-are {
   background-color: teal;
   text-align:center;
   font-size: 50px;
   font-weight:bold;
 }
-
-
-#events-and-links {
-
-}
-
-#events {
-
-}
-
-#links {
-
-}
-
-#footer {
-
-}
-
+/**
+ * Members styles.
+ */
 #members {
   display: flex;
   flex-direction: row;
@@ -127,7 +114,6 @@
   justify-content: center;
 }
 
-
 .member-image {
   max-width: 200px;
   margin: auto;
@@ -142,7 +128,6 @@
   color: red;
 }
 
-<<<<<<< HEAD
 .member-detail-interests {
   font-weight: bolder;
 }
@@ -168,7 +153,7 @@
   white-space:nowrap;
 }
 */
-=======
+
 .member-item {
   background-color: blue;
   width: 100px;
@@ -183,4 +168,24 @@
   font-size: 3000px;
   text-align: center;
 }
->>>>>>> 854d84476f5dad0c9db6b917a81fc5b3a2bb5765
+/**
+ * Events and links styles.
+ */
+#events-and-links {
+
+}
+
+#events {
+
+}
+
+#links {
+
+}
+/**
+ * Footer styles.
+ */
+#footer {
+
+}
+
