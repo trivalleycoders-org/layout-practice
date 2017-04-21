@@ -172,6 +172,20 @@
  * Events and links styles.
  */
 #events-and-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.title {
+  text-align: center;
+}
+
+#events-list {
+  text-align: start;
+}
+
+.event {
 
 }
 
