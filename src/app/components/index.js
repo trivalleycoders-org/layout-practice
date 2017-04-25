@@ -12,20 +12,24 @@ require('../templates/index.html');
 
 
 function populatePage(){
-  const URL = "https://api.meetup.com/trivalleycoders/events?photo-host=public&page=5&sig_id=186737513&sig=d406090300acc9b233fb24b6a891f3d0160148a5&callback=?";
-  $.getJSON(URL, (data) => {
-    let dataArr = Object.values(data);
+  const URL = "https://api.meetup.com/trivalleycoders/events?photo-host=public&page=5&sig_id=186737513&sig=d406090300acc9b233fb24b6a891f3d0160148a5";
+  
+  return fetch(URL, {mode: 'no cors'})
+    .then((response) => {
+    	return response.json();
+    })
+    .then(function(data){
     // make elements and add details for each event
-    dataArr[1].forEach((event, index) => {
-      let eventTitle = event.name;
-      let eventLocation = `${event.venue.name}, ${event.venue.address_1}, ${event.venue.city}`;
-      let dateInfo = new Date(event.time);
-      let eventDate = formatDate(dateInfo);
+      data.forEach((event, index) => {
+        let eventTitle = event.name;
+        let eventLocation = `${event.venue.name}, ${event.venue.address_1}, ${event.venue.city}`;
+        let dateInfo = new Date(event.time);
+        let eventDate = formatDate(dateInfo);
       
-      makeEventElements(index);
-      addEventDetails(eventTitle, eventDate, eventLocation, index);
-    }); 
-  });
+        makeEventElements(index);
+        addEventDetails(eventTitle, eventDate, eventLocation, index);
+      }); 
+    });
 }
 
 function makeEventElements(num){
