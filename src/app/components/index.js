@@ -1,13 +1,14 @@
 import * as ku from '../lib/ke-utils';
 require('../templates/index.html');
 
-const fetchJsonp = require('../../node_modules/fetch-jsonp/build/fetch-jsonp.js');
+// const fetchJsonp = require('../../node_modules/fetch-jsonp/build/fetch-jsonp.js');
+import fetchJsonp from 'fetch-jsonp';
 
-(function() 
+(function()
   {
   	/**
   	 * Add list of Meetup events to Events section.
-  	 */ 
+  	 */
     populatePage();
   }
 )();
@@ -15,7 +16,7 @@ const fetchJsonp = require('../../node_modules/fetch-jsonp/build/fetch-jsonp.js'
 
 function populatePage(){
   const URL = "https://api.meetup.com/trivalleycoders/events?photo-host=public&page=5&sig_id=186737513&sig=d406090300acc9b233fb24b6a891f3d0160148a5";
-  
+
    fetchJsonp(URL)
     .then((response) => {
     	return response.json();
@@ -23,7 +24,7 @@ function populatePage(){
     .then(function(data){
       // Convert jsonp data into an array
       let dataArr = Object.values(data);
-      
+
     // Make elements and add details for each event
       dataArr[1].forEach((event, index) => {
         let dateInfo = new Date(event.time);
@@ -33,10 +34,10 @@ function populatePage(){
           eventDate: formatDate(dateInfo),
           index: index,
         }
-        
+
         makeEventElements({index});
         addEventDetails(details);
-      }); 
+      });
     });
 }
 
@@ -70,8 +71,7 @@ function formatDate(dateInfo){
   let date = dateArr.slice(0, 3).join(' ');
   let time = dateArr.pop().split(':').slice(0, 2).join(':');
 
-  if (time.charAt(0) === '0'){ time = time.substring(1); }  
-  
+  if (time.charAt(0) === '0'){ time = time.substring(1); }
+
   return eventDate = `${date} ${time}`;
 }
-
